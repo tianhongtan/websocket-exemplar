@@ -1,0 +1,17 @@
+{
+  "name": "websocket-exemplar",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Tim Tan <tim.tan@veeva.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
