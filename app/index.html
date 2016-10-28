@@ -4,12 +4,27 @@
     <!--socket.io created via code-->
     <script type="text/javascript" src='/socket.io/socket.io.js'></script>
     <script src="main.js"></script>
-    <script>
-    </script>
+    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>WS-Exemplar</title>
 </head>
 <body>
-    <h1>My App</h1>
+    <h1>MessageApp1</h1>
+    <div id="messages"></div>
+    <form class="" onsubmit="return addMessage(this)">
+        <!-- <button type="submit" name="button">Add a new message</button> -->
+        <div class="username">
+            <input type="text" id=username placeholder="Your name" value=Guest required>
+        </div>
+        <div class="link">
+            <input type="text" id=linkAddress placeholder="Link" required>
+        </div>
+        <div class="message-input">
+            <textarea id="message" placeholder="Enter a message" required></textarea>
+        </div>
+        <input class=sendMessageButton type="submit" name="name" value="Send!">
+    </form>
 </body>
 </html>
